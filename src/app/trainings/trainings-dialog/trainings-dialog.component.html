@@ -1,0 +1,14 @@
+<h2 mat-dialog-title class="text-center">{{data.training.title}}</h2>
+<mat-dialog-content>
+  <div>
+    <img [src]="data.training.imageUrl" />
+  </div>
+  <div class="my-4 text-center">
+    <button mat-flat-button>
+      <mat-icon>add</mat-icon>
+      Agregar fase
+    </button>
+  </div>
+  <app-phase />  
+  <app-phase />  
+</mat-dialog-content>
