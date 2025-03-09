@@ -35,7 +35,7 @@ export class UsersComponent implements OnInit {
   }
 
   getUsersData(): Observable<Card[]> {
-    return this.http.get<Card[]>('/assets/data/USERS_MOCK_DATA.json');
+    return this.http.get<Card[]>('assets/data/USERS_MOCK_DATA.json');
   }
 
   showDetails(id: number): void {
